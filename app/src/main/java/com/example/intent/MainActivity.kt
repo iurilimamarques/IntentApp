@@ -61,7 +61,7 @@ class MainActivity : ComponentActivity() {
                             setPackage("com.google.android.apps.maps")
                         }
 
-                        if (intent.resolveActivity(context.packageManager) != null) {
+                        if (intent != null) {
                             context.startActivity(intent)
                         }
                     }
